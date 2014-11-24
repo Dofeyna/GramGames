@@ -138,6 +138,7 @@ public class GameEngine implements ActionListener{
 				fm.setConfig( config);
 				//Make sure that the actionStatus set back to default.
 				gm.getCanvas().setActionStatus("None");
+				gm.getCanvas().getFunctionArea().setText("Game is saved!");
 			}
 			//If the destroy button clicked and then a building is chosen to be destroyed. 
 			else if( actionStatus == "DestroyClicked" ){
