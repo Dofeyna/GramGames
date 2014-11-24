@@ -1,1 +1,1 @@
-Common1 0 0/Common2 0 0/Common3 0 0/Common4 0 0/Common5 0 0/Unique1 0 0/Unique2 0 0/Unique3 0 0/Unique4 13 8/Unique5 0 0/Unique6 0 0/Unique7 7 4/Unique8 0 0/Unique9 0 0/Unique10 0 0/Unique11 0 0/Unique12 0 0/Unique13 0 0/Unique14 12 5/Unique15 0 0/
+Common1 0 0/Common2 0 0/Common3 17 3/Common4 17 8/Common5 0 0/Unique1 0 0/Unique2 0 0/Unique3 0 0/Unique4 13 8/Unique5 0 0/Unique6 0 0/Unique7 7 4/Unique8 0 0/Unique9 0 0/Unique10 0 0/Unique11 0 0/Unique12 0 0/Unique13 0 0/Unique14 12 5/Unique15 0 0/

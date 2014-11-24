@@ -80,9 +80,12 @@ public class Grid {
 			}
 			else{
 				gameBoard[ positionX][ positionY] = EMPTY;
-				gameBoard[ positionX + 1][ positionY] = EMPTY;
-				gameBoard[ positionX][ positionY + 1] = EMPTY;
-				gameBoard[ positionX + 1][ positionY + 1] = EMPTY;
+				if( positionX < 19)
+					gameBoard[ positionX + 1][ positionY] = EMPTY;
+				if( positionY < 19)
+					gameBoard[ positionX][ positionY + 1] = EMPTY;
+				if( positionX < 19 && positionY < 19)
+					gameBoard[ positionX + 1][ positionY + 1] = EMPTY;
 				System.out.println("Unique building destroyed!");
 				return true;
 			}

@@ -169,38 +169,55 @@ public class GameCanvas extends JPanel implements ActionListener{
 			destroyBuildingIndex = Integer.parseInt(grid[x][y].getText().substring(1, grid[x][y].getText().length())) + 4;
 			//Checks the every neighbor of clicked button if there is any other building which is the part
 			//of that building destroys them also.
-			if( grid[x][y + 1].getText().equals(grid[x][y].getText())){
-				grid[x][y + 1].setText("");
-				grid[x][y + 1].setBackground(EMPTY);
+			if( y < 19){
+				if( grid[x][y + 1].getText().equals(grid[x][y].getText())){
+					grid[x][y + 1].setText("");
+					grid[x][y + 1].setBackground(EMPTY);
+				}
 			}
-			if( grid[x][y - 1].getText().equals(grid[x][y].getText())){
-				grid[x][y - 1].setText("");
-				grid[x][y - 1].setBackground(EMPTY);
+			if ( y < 19 && x < 19){
+				if( grid[x + 1][y + 1].getText().equals(grid[x][y].getText())){
+					grid[x + 1][y + 1].setText("");
+					grid[x + 1][y + 1].setBackground(EMPTY);
+				}
 			}
-			if( grid[x + 1][y].getText().equals(grid[x][y].getText())){
-				grid[x + 1][y].setText("");
-				grid[x + 1][y].setBackground(EMPTY);
+			if( y > 0){
+				if( grid[x][y - 1].getText().equals(grid[x][y].getText())){
+					grid[x][y - 1].setText("");
+					grid[x][y - 1].setBackground(EMPTY);
+				}	
 			}
-			if( grid[x - 1][y].getText().equals(grid[x][y].getText())){
-				grid[x - 1][y].setText("");
-				grid[x - 1][y].setBackground(EMPTY);
+			if( x < 19){
+				if( grid[x + 1][y].getText().equals(grid[x][y].getText())){
+					grid[x + 1][y].setText("");
+					grid[x + 1][y].setBackground(EMPTY);
+				}
 			}
-			if( grid[x - 1][y + 1].getText().equals(grid[x][y].getText())){
-				grid[x - 1][y + 1].setText("");
-				grid[x - 1][y + 1].setBackground(EMPTY);
+			if( x > 0){
+				if( grid[x - 1][y].getText().equals(grid[x][y].getText())){
+					grid[x - 1][y].setText("");
+					grid[x - 1][y].setBackground(EMPTY);
+				}
 			}
-			if( grid[x + 1][y + 1].getText().equals(grid[x][y].getText())){
-				grid[x + 1][y + 1].setText("");
-				grid[x + 1][y + 1].setBackground(EMPTY);
+			if( x > 0 && y < 19){
+				if( grid[x - 1][y + 1].getText().equals(grid[x][y].getText())){
+					grid[x - 1][y + 1].setText("");
+					grid[x - 1][y + 1].setBackground(EMPTY);
+				}
 			}
-			if( grid[x - 1][y - 1].getText().equals(grid[x][y].getText())){
-				grid[x - 1][y - 1].setText("");
-				grid[x - 1][y - 1].setBackground(EMPTY);
+			if( x > 0 && y > 0){
+				if( grid[x - 1][y - 1].getText().equals(grid[x][y].getText())){
+					grid[x - 1][y - 1].setText("");
+					grid[x - 1][y - 1].setBackground(EMPTY);
+				}
 			}
-			if( grid[x + 1][y - 1].getText().equals(grid[x][y].getText())){
-				grid[x + 1][y - 1].setText("");
-				grid[x + 1][y - 1].setBackground(EMPTY);
+			if( x < 19 && y > 0){
+				if( grid[x + 1][y - 1].getText().equals(grid[x][y].getText())){
+					grid[x + 1][y - 1].setText("");
+					grid[x + 1][y - 1].setBackground(EMPTY);
+				}
 			}
+			
 			//Sets button at grid to default.
 			grid[x][y].setText("");
 			grid[x][y].setBackground(EMPTY);
