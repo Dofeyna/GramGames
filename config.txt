@@ -1,0 +1,1 @@
+Common1 0 0/Common2 4 2/Common3 14 7/Common4 0 0/Common5 16 17/Unique1 0 0/Unique2 0 0/Unique3 0 0/Unique4 0 0/Unique5 14 10/Unique6 0 0/Unique7 0 0/Unique8 0 0/Unique9 11 3/Unique10 0 0/Unique11 0 0/Unique12 0 0/Unique13 4 11/Unique14 0 0/Unique15 0 0/
